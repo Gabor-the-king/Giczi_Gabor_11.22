@@ -1,5 +1,6 @@
 from data import sportolok, szemelyiedzok
 from os import system
+szemelyiezokfajlnev="szemelyiedzok.txt"
 
 def menu():
     system('cls')
@@ -14,3 +15,15 @@ def menu():
     print('6 - Sportoló törlése')
     valasztott=input('Válasszon egy menüpontot: ')
     return valasztott
+
+def szemelyiedzokKiirasa():
+    print('Személyi edzők listája: ')
+    for i in range(0,len(szemelyiedzok)):
+        print(f'\t{i+1}. {szemelyiedzok[i]}')
+    input('Tovább......') 
+
+def szemelyiedzokfajlBetoltes():   
+    file=open(szemelyiezokfajlnev,'r',encoding='utf-8')
+    for row in file:
+        szemelyiedzok.append(row.strip())  
+    file.close()
