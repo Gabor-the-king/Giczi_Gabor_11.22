@@ -1,0 +1,2 @@
+szemelyiedzok=[]
+sportolok=[]

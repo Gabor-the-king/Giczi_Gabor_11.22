@@ -1,9 +1,10 @@
 from functions import *
 from os import system
-from data import *
+from data import szemelyiedzok, sportolok
 
 valasztott=''
 while valasztott!='0':
+    valasztott=menu()
     if valasztott=='1':
         pass
     elif valasztott=='2':
