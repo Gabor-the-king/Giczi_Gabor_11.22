@@ -2,6 +2,7 @@ from functions import *
 from os import system
 from data import szemelyiedzok, sportolok
 szemelyiedzokfajlBetoltes()
+sportolokFajlbetoltes()
 
 valasztott=''
 while valasztott!='0':
@@ -17,7 +18,7 @@ while valasztott!='0':
         pass
     elif valasztott=='4':
         system('cls')
-        pass
+        sportolokKiirasa()
     elif valasztott=='5':
         system('cls')
         pass

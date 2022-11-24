@@ -1,2 +1,2 @@
 szemelyiedzok=[]
-sportolok=[]
+sportolok={}
