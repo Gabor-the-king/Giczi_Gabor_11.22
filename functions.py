@@ -1,6 +1,7 @@
 from data import sportolok, szemelyiedzok
 from os import system
 szemelyiezokfajlnev="szemelyiedzok.txt"
+sportolokfajlNev="sportolok.txt"
 
 def menu():
     system('cls')
@@ -17,6 +18,7 @@ def menu():
     return valasztott
 
 def szemelyiedzokKiirasa():
+    system('cls')
     print('Személyi edzők listája: ')
     for i in range(0,len(szemelyiedzok)):
         print(f'\t{i+1}. {szemelyiedzok[i]}')
@@ -27,3 +29,18 @@ def szemelyiedzokfajlBetoltes():
     for row in file:
         szemelyiedzok.append(row.strip())  
     file.close()
+    
+def sportolokFajlbetoltes():
+    file=open(sportolokfajlNev, 'r',encoding='utf-8')
+    darabolt=[]
+    for row in file:
+        darabolt=row.strip().split(';')
+        sportolok[darabolt[0]]=darabolt[1]
+    file.close()
+    
+def sportolokKiirasa():
+    system('cls')
+    print('Sportolók edzőkkel: ')
+    for key,value in sportolok.items():
+        print(f'\t{key}-{value}')
+    input('Tovább.....')
