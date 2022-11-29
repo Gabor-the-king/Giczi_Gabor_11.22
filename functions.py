@@ -55,3 +55,10 @@ def ujSportoloFelvetele():
         szemelyiedzo=input('A bekért név nincs benn a listában kirem adjon meg egy másikat: ')
     sportolok[nev]=szemelyiedzo
     input('A sportoló sikeresen felvételre került...')
+
+def mentesFajlba():
+    file=open('sportolok.txt','w',encoding='utf-8')
+    for sportolo in sportolok:
+        file.write(sportolo+'\n')  
+    file.close()
+    input('Sikeres mentés...')

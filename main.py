@@ -15,7 +15,7 @@ while valasztott!='0':
         ujSportoloFelvetele()
     elif valasztott=='3':    
         system('cls')
-        pass
+        mentesFajlba()
     elif valasztott=='4':
         system('cls')
         sportolokKiirasa()
