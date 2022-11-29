@@ -12,7 +12,7 @@ while valasztott!='0':
         szemelyiedzokKiirasa()
     elif valasztott=='2':
         system('cls')
-        pass
+        ujSportoloFelvetele()
     elif valasztott=='3':    
         system('cls')
         pass

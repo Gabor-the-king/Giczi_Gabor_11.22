@@ -1,3 +1,4 @@
+from genericpath import exists
 from data import sportolok, szemelyiedzok
 from os import system
 szemelyiezokfajlnev="szemelyiedzok.txt"
@@ -44,3 +45,13 @@ def sportolokKiirasa():
     for key,value in sportolok.items():
         print(f'\t{key}-{value}')
     input('Tovább.....')
+
+def ujSportoloFelvetele():
+    system('cls')    
+    print('Új sportoló felvétele')
+    nev=input('Kérem a spotoló nevét: ')
+    szemelyiedzo=input('Kérem a személyi edző nevét: ')
+    while szemelyiedzo not in szemelyiedzok:
+        szemelyiedzo=input('A bekért név nincs benn a listában kirem adjon meg egy másikat: ')
+    sportolok[nev]=szemelyiedzo
+    input('A sportoló sikeresen felvételre került...')
