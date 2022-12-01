@@ -42,9 +42,10 @@ def sportolokFajlbetoltes():
 def sportolokKiirasa():
     system('cls')
     print('Sportolók edzőkkel: ')
+    sorszam=1
     for key,value in sportolok.items():
-        print(f'\t{key}-{value}')
-    input('Tovább.....')
+        print(f'\t{sorszam}. {key} - {value}')
+        sorszam+=1
 
 def ujSportoloFelvetele():
     system('cls')    
@@ -62,3 +63,16 @@ def mentesFajlba():
         file.write(f'{key};{value}\n')  
     file.close()
     input('Sikeres mentés...')
+
+def SzemelyiEdzohozSportolo():
+    szemelyiedzoklista=list(sportolok.values())
+    legtobbszemelyedzo=max(set(szemelyiedzoklista), key=szemelyiedzoklista.count)
+    print(f'A legtöbb sportolóhoz tartozó személyi edző: {legtobbszemelyedzo}')
+    input('Tovább......')
+
+def SportoloTorlese():
+    sportolokKiirasa()
+    torlendo=int(input('Kit szeretne törölni? Adja meg a sorszámát: '))-1
+    sportoloklista=list(sportolok.keys())
+    sportolok.pop(sportoloklista[torlendo])
+    input('A sportoló törlése sikeres...')

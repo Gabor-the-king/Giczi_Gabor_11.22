@@ -19,9 +19,10 @@ while valasztott!='0':
     elif valasztott=='4':
         system('cls')
         sportolokKiirasa()
+        input('Tovább.....')
     elif valasztott=='5':
         system('cls')
-        pass
+        SzemelyiEdzohozSportolo()
     elif valasztott=='6':
         system('cls')
-        pass
+        SportoloTorlese()
