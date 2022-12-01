@@ -58,7 +58,7 @@ def ujSportoloFelvetele():
 
 def mentesFajlba():
     file=open('sportolok.txt','w',encoding='utf-8')
-    for sportolo in sportolok:
-        file.write(sportolo+'\n')  
+    for key,value in sportolok.items():
+        file.write(f'{key};{value}\n')  
     file.close()
     input('Sikeres mentés...')

@@ -1,9 +1,8 @@
-Szeder Bence
-Ladjánszki Zsombor
-Varga Botond
-Selyem Bálint
-Horváth Noel
-Haszonits Gergő
-Gábriel Milán
-Dudás Milán
-Kukics Milán
+Szeder Bence;Neuberger Flórián
+Gábriel Milán;Tüskés Bálint
+Dudás Milán;Bognár Áron
+Kukics Milán;Lakatos József
+Mizser Bálint;Fazekas János
+Miliczki Áron;Kiss István
+Haszonits Gergő;Kovács Béla
+asd;Neuberger Flórián
